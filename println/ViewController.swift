@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBAction func buttonPressed(sender: UIButton) {
+        println("Button Pressed!")
+    }
+    @IBAction func sliderSlid(sender: UISlider) {
+        if (sender.value > 0.5){
+            println(sender.value)
+        }
+    }
+    @IBAction func switchSwitched(sender: UISwitch) {
+        println("Switch Switched!")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
